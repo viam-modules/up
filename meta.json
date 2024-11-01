@@ -1,0 +1,19 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "viam:up",
+  "visibility": "public",
+  "url": "https://github.com/viam-modules/up",
+  "description": "Go module for up upboard board, compatible with Viam",
+  "models": [
+    {
+      "api": "rdk:component:board",
+      "model": "viam:up:upboard"
+    }
+  ],
+  "build": {
+    "build": "make module",
+    "path": "bin/module.tar.gz",
+    "arch" : ["linux/arm64", "linux/amd64", "darwin/arm64"]
+  },
+  "entrypoint": "bin/up"
+}
