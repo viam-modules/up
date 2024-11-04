@@ -10,9 +10,6 @@ This [up module](https://app.viam.com/module/viam/up) implements an Intel-based 
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
 [Add sensor / up:upboard to your machine](https://docs.viam.com/configure/#components).
 
-> [!NOTE]
-> For more information, see [Configure a Machine](https://docs.viam.com/configure/).
-
 ### Attributes
 
 The following attributes are available for `viam:up:upboard` boards:
