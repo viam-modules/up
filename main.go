@@ -3,7 +3,6 @@ package main
 
 import (
 	"context"
-
 	"up/upboard"
 
 	"go.viam.com/rdk/components/board"
@@ -13,7 +12,7 @@ import (
 )
 
 func main() {
-	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("NAME"))
+	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("up"))
 }
 
 func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) error {
