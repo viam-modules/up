@@ -13,7 +13,6 @@ require (
 	go.viam.com/rdk v0.48.2
 	go.viam.com/utils v0.1.110
 	gotest.tools/gotestsum v1.10.0
-	periph.io/x/host/v3 v3.8.1-0.20230331112814-9f0d9f7d76db
 )
 
 require (
@@ -322,4 +321,5 @@ require (
 	mvdan.cc/unparam v0.0.0-20240528143540-8a5130ca722f // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
 	periph.io/x/conn/v3 v3.7.0 // indirect
+	periph.io/x/host/v3 v3.8.1-0.20230331112814-9f0d9f7d76db // indirect
 )

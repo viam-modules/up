@@ -25,8 +25,6 @@ const modelName = "upboard"
 // Model for viam supported upboard.
 var Model = resource.NewModel("viam", "up", "upboard")
 
-var logger = logging.NewLogger("test")
-
 func init() {
 	gpioMappings, err := genericlinux.GetGPIOBoardMappings(modelName, boardInfoMappings)
 	var noBoardErr genericlinux.NoBoardFoundError
