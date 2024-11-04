@@ -8,7 +8,7 @@ This [up module](https://app.viam.com/module/viam/up) implements an Intel-based 
 ## Configure your upboard board
 
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
-[Add sensor / up:upboard to your machine](https://docs.viam.com/configure/#components).
+[Add board / up:upboard to your machine](https://docs.viam.com/configure/#components).
 
 ### Attributes
 
@@ -36,8 +36,8 @@ For instructions on implementing digital interrupts, see [Digital interrupt conf
 
 ### Next Steps
 - To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
-- To write code against your sensor, use one of the [available SDKs](https://docs.viam.com/sdks/).
-- To view examples using a sensor component, explore [these tutorials](https://docs.viam.com/tutorials/).
+- To write code against your board, use one of the [available SDKs](https://docs.viam.com/sdks/).
+- To view examples using a board component, explore [these tutorials](https://docs.viam.com/tutorials/).
 
 ## Digital interrupt configuration
 [Interrupts](https://en.wikipedia.org/wiki/Interrupt) are a method of signaling precise state changes.
