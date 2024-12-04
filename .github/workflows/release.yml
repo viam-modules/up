@@ -17,6 +17,7 @@ jobs:
     uses: ./.github/workflows/test.yml
 
   publish:
+    needs: test
     strategy:
       matrix:
         include:
@@ -42,10 +43,10 @@ jobs:
 
     - name: Build and package
       run: |
-        canon --profile MODULE
+        canon --profile up
         TARGET_OS=${{ matrix.platform }} TARGET_ARCH=${{ matrix.arch }} make module
 
-    - name: Upload MODULE module to registry
+    - name: Upload up module to registry
       uses: viamrobotics/upload-module@main
       with:
         meta-path: meta.json
