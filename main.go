@@ -3,7 +3,8 @@ package main
 
 import (
 	"context"
-	"up/upboard"
+
+	"github.com/viam-modules/up/upboard"
 
 	"go.viam.com/rdk/components/board"
 	"go.viam.com/rdk/logging"
