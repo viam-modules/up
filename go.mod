@@ -1,4 +1,4 @@
-module up
+module github.com/viam-modules/up
 
 go 1.23.0
 
