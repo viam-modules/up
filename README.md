@@ -5,10 +5,10 @@ This [up module](https://app.viam.com/module/viam/up) implements an Intel-based 
 > [!NOTE]
 > Before configuring your board, you must [create a machine](https://docs.viam.com/cloud/machines/#add-a-new-machine).
 
-## Configure your upboard board
-
 Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [machine](https://docs.viam.com/fleet/machines/) in the [Viam app](https://app.viam.com/).
 [Add board / up:upboard to your machine](https://docs.viam.com/configure/#components).
+
+## Configure your upboard board
 
 ### Attributes
 
@@ -18,11 +18,10 @@ The following attributes are available for `viam:up:upboard` boards:
 | --------- | ---- | --------- | ----------  |
 | `digital_interrupts` | object | Optional | Any digital interrupts's pin number and name. |
 
-For instructions on implementing digital interrupts, see [Digital interrupt configuration](#Digital-interrupt-configuration)
-
-## Example configuration
+### Example configuration
 
 ### `viam:up:upboard`
+
 ```json
   {
     "name": "<your-up-upboard-board-name>",
@@ -34,12 +33,8 @@ For instructions on implementing digital interrupts, see [Digital interrupt conf
   }
 ```
 
-### Next Steps
-- To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
-- To write code against your board, use one of the [available SDKs](https://docs.viam.com/sdks/).
-- To view examples using a board component, explore [these tutorials](https://docs.viam.com/tutorials/).
+### Digital interrupt configuration
 
-## Digital interrupt configuration
 [Interrupts](https://en.wikipedia.org/wiki/Interrupt) are a method of signaling precise state changes.
 Configuring digital interrupts to monitor GPIO pins on your board is useful when your application needs to know precisely when there is a change in GPIO value between high and low.
 
@@ -64,7 +59,6 @@ Integrate `digital_interrupts` into your machine in the `attributes` of your boa
 
 The following attributes are available for `digital_interrupts`:
 
-<!-- prettier-ignore -->
 | Name | Type | Required? | Description |
 | ---- | ---- | --------- | ----------- |
 |`name` | string | **Required** | Your name for the digital interrupt. |
@@ -96,3 +90,9 @@ The following attributes are available for `digital_interrupts`:
   ]
 }
 ```
+
+## Next Steps
+
+- To test your board, expand the **TEST** section of its configuration pane or go to the [**CONTROL** tab](https://docs.viam.com/fleet/control/).
+- To write code against your board, use one of the [available SDKs](https://docs.viam.com/sdks/).
+- To view examples using a board component, explore [these tutorials](https://docs.viam.com/tutorials/).

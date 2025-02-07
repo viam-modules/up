@@ -7,7 +7,9 @@
   "models": [
     {
       "api": "rdk:component:board",
-      "model": "viam:up:upboard"
+      "model": "viam:up:upboard",
+      "markdown_link": "README.md#configure-your-upboard-board",
+      "short_description": "board model for the UP 4000"
     }
   ],
   "build": {
