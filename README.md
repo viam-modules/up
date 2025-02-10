@@ -15,7 +15,7 @@ Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [m
 {}
 ```
 
-### Example configuration with optional analogs and digital interrupts
+### Example configuration with optional digital interrupts
 ```json
   {
     "analogs": [
