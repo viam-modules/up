@@ -10,6 +10,35 @@ Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [m
 
 ## Configure your upboard board
 
+### Example configuration
+```json
+{}
+```
+
+### Example configuration with optional analogs and digital interrupts
+```json
+  {
+    "analogs": [
+      {
+      "name": "current",
+      "pin": "1",
+      "spi_bus": "1",
+      "chip_select": "0"
+      }
+    ],
+      "digital_interrupts": [
+      {
+        "name": "your-interrupt-1",
+        "pin": "15"
+      },
+      {
+        "name": "your-interrupt-2",
+        "pin": "16"
+      }
+    ]
+  }
+```
+
 ### Attributes
 
 The following attributes are available for `viam:up:upboard` boards:
@@ -17,21 +46,6 @@ The following attributes are available for `viam:up:upboard` boards:
 | Attribute | Type | Required? | Description |
 | --------- | ---- | --------- | ----------  |
 | `digital_interrupts` | object | Optional | Any digital interrupts's pin number and name. |
-
-### Example configuration
-
-### `viam:up:upboard`
-
-```json
-  {
-    "name": "<your-up-upboard-board-name>",
-    "model": "viam:up:upboard",
-    "type": "board",
-    "namespace": "rdk",
-    "attributes": {},
-    "depends_on": []
-  }
-```
 
 ### Digital interrupt configuration
 
@@ -55,7 +69,7 @@ Integrate `digital_interrupts` into your machine in the `attributes` of your boa
 }
 ```
 
-### Attributes
+#### Attributes
 
 The following attributes are available for `digital_interrupts`:
 
@@ -63,33 +77,6 @@ The following attributes are available for `digital_interrupts`:
 | ---- | ---- | --------- | ----------- |
 |`name` | string | **Required** | Your name for the digital interrupt. |
 |`pin`| string | **Required** | The pin number of the board's GPIO pin that you wish to configure the digital interrupt for. |
-
-### Example configuration
-
-```json {class="line-numbers linkable-line-numbers"}
-{
-  "components": [
-    {
-      "name": "<your-up-upboard-board-name>",
-      "model": "viam:up:upboard",
-      "type": "board",
-      "namespace": "rdk",
-      "attributes": {
-        "digital_interrupts": [
-          {
-            "name": "your-interrupt-1",
-            "pin": "15"
-          },
-          {
-            "name": "your-interrupt-2",
-            "pin": "16"
-          }
-        ]
-      }
-    }
-  ]
-}
-```
 
 ## Next Steps
 
