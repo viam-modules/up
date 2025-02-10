@@ -17,26 +17,18 @@ Navigate to the [**CONFIGURE** tab](https://docs.viam.com/configure/) of your [m
 
 ### Example configuration with optional digital interrupts
 ```json
+{
+  "digital_interrupts": [
   {
-    "analogs": [
-      {
-      "name": "current",
-      "pin": "1",
-      "spi_bus": "1",
-      "chip_select": "0"
-      }
-    ],
-      "digital_interrupts": [
-      {
-        "name": "your-interrupt-1",
-        "pin": "15"
-      },
-      {
-        "name": "your-interrupt-2",
-        "pin": "16"
-      }
-    ]
+    "name": "your-interrupt-1",
+    "pin": "15"
+  },
+  {
+    "name": "your-interrupt-2",
+    "pin": "16"
   }
+  ]
+}
 ```
 
 ### Attributes
