@@ -9,7 +9,7 @@ jobs:
     strategy:
        matrix:
         include:
-          - arch: buildjet-8vcpu-ubuntu-2204
+          - arch: ubuntu-large
             image: ghcr.io/viamrobotics/rdk-devenv:amd64-cache
             platform: linux/amd64
             label: amd64
