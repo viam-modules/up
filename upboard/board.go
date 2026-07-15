@@ -26,10 +26,11 @@ const modelName = "upboard"
 var Model = resource.NewModel("viam", "up", "upboard")
 
 func init() {
-	gpioMappings, err := genericlinux.GetGPIOBoardMappings(modelName, boardInfoMappings)
+	logger := logging.NewLogger(modelName)
+	gpioMappings, err := genericlinux.GetGPIOBoardMappings(modelName, boardInfoMappings, logger)
 	var noBoardErr genericlinux.NoBoardFoundError
 	if errors.As(err, &noBoardErr) {
-		logging.Global().Debugw("error getting up board GPIO board mapping", "error", err)
+		logger.Debugw("error getting up board GPIO board mapping", "error", err)
 	}
 
 	resource.RegisterComponent(
